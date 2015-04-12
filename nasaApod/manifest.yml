@@ -3,5 +3,5 @@ applications:
 - name: nasaApod
   memory: 512M
   instances: 1
-  path: target/lib/nasaApod-1.0-SNAPSHOT.jar
+  path: target/nasaApod-1.0-SNAPSHOT.jar
   buildpack: https://github.com/cloudfoundry/java-buildpack.git

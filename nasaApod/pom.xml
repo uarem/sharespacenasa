@@ -34,19 +34,19 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>com.nasa.spaceapps.server.SpaceAppsServer</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
 		</plugins>
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-jar-plugin</artifactId>
-			<version>2.6</version>
-			<configuration>
-				<archive>
-					<manifest>
-						<mainClass>com.nasa.spaceapps.server.SpaceAppsServer</mainClass>
-					</manifest>
-				</archive>
-			</configuration>
-		</plugin>
 	</build>
 	<properties>
 		<dropwizard.version>0.8.0</dropwizard.version>
