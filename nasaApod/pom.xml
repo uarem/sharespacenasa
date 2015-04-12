@@ -5,6 +5,7 @@
 	<artifactId>personalizedApod</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<url>http://maven.apache.org</url>
+	<packaging>jar</packaging>
 	<dependencies>
 		<dependency>
 			<groupId>com.googlecode.json-simple</groupId>
@@ -34,6 +35,18 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jar-plugin</artifactId>
+			<version>2.6</version>
+			<configuration>
+				<archive>
+					<manifest>
+						<mainClass>com.nasa.spaceapps.server.SpaceAppsServer</mainClass>
+					</manifest>
+				</archive>
+			</configuration>
+		</plugin>
 	</build>
 	<properties>
 		<dropwizard.version>0.8.0</dropwizard.version>
